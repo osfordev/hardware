@@ -1,0 +1,47 @@
+00:00.0 Host bridge [0600]: Intel Corporation 2nd Generation Core Processor Family DRAM Controller [8086:0100] (rev 09)
+	DeviceName:  Realtek RT8111E
+	Subsystem: Fujitsu Technology Solutions 2nd Generation Core Processor Family DRAM Controller [1734:11b9]
+	Kernel driver in use: snb_uncore
+00:02.0 VGA compatible controller [0300]: Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller [8086:0102] (rev 09)
+	Subsystem: Fujitsu Technology Solutions 2nd Generation Core Processor Family Integrated Graphics Controller [1734:11b9]
+	Kernel driver in use: i915
+	Kernel modules: i915
+00:14.0 USB controller [0c03]: Intel Corporation 7 Series/C210 Series Chipset Family USB xHCI Host Controller [8086:1e31] (rev 04)
+	Subsystem: Fujitsu Technology Solutions 7 Series/C210 Series Chipset Family USB xHCI Host Controller [1734:11d6]
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+00:16.0 Communication controller [0780]: Intel Corporation 7 Series/C216 Chipset Family MEI Controller #1 [8086:1e3a] (rev 04)
+	Subsystem: Fujitsu Technology Solutions 7 Series/C216 Chipset Family MEI Controller [1734:11d6]
+	Kernel driver in use: mei_me
+	Kernel modules: mei_me
+00:1a.0 USB controller [0c03]: Intel Corporation 7 Series/C216 Chipset Family USB Enhanced Host Controller #2 [8086:1e2d] (rev 04)
+	Subsystem: Fujitsu Technology Solutions 7 Series/C216 Chipset Family USB Enhanced Host Controller [1734:11d6]
+	Kernel driver in use: ehci-pci
+00:1b.0 Audio device [0403]: Intel Corporation 7 Series/C216 Chipset Family High Definition Audio Controller [8086:1e20] (rev 04)
+	Subsystem: Fujitsu Technology Solutions 7 Series/C216 Chipset Family High Definition Audio Controller [1734:11d8]
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+00:1c.0 PCI bridge [0604]: Intel Corporation 7 Series/C216 Chipset Family PCI Express Root Port 1 [8086:1e10] (rev c4)
+	Kernel driver in use: pcieport
+00:1c.5 PCI bridge [0604]: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 6 [8086:1e1a] (rev c4)
+	Kernel driver in use: pcieport
+00:1d.0 USB controller [0c03]: Intel Corporation 7 Series/C216 Chipset Family USB Enhanced Host Controller #1 [8086:1e26] (rev 04)
+	Subsystem: Fujitsu Technology Solutions 7 Series/C216 Chipset Family USB Enhanced Host Controller [1734:11d6]
+	Kernel driver in use: ehci-pci
+00:1e.0 PCI bridge [0604]: Intel Corporation 82801 PCI Bridge [8086:244e] (rev a4)
+00:1f.0 ISA bridge [0601]: Intel Corporation B75 Express Chipset LPC Controller [8086:1e49] (rev 04)
+	Subsystem: Fujitsu Technology Solutions B75 Express Chipset LPC Controller [1734:11d6]
+	Kernel driver in use: lpc_ich
+	Kernel modules: lpc_ich
+00:1f.2 SATA controller [0106]: Intel Corporation 7 Series/C210 Series Chipset Family 6-port SATA Controller [AHCI mode] [8086:1e02] (rev 04)
+	Subsystem: Fujitsu Technology Solutions 7 Series/C210 Series Chipset Family 6-port SATA Controller [AHCI mode] [1734:11d6]
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+00:1f.3 SMBus [0c05]: Intel Corporation 7 Series/C216 Chipset Family SMBus Controller [8086:1e22] (rev 04)
+	Subsystem: Fujitsu Technology Solutions 7 Series/C216 Chipset Family SMBus Controller [1734:11d6]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+02:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 06)
+	Subsystem: Fujitsu Technology Solutions RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [1734:11c0]
+	Kernel driver in use: r8169
+	Kernel modules: r8169

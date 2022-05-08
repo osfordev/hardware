@@ -1,0 +1,98 @@
+Module                  Size  Used by
+st                     61440  0
+lp                     20480  0
+parport_pc             45056  1
+nvram                  16384  0
+nfnetlink              20480  0
+hid_logitech_hidpp     49152  0
+hid_logitech_dj        28672  0
+zfs                  4255744  6
+zunicode              331776  1 zfs
+zzstd                 438272  1 zfs
+zlua                  151552  1 zfs
+zavl                   16384  1 zfs
+icp                   303104  1 zfs
+zcommon                98304  2 zfs,icp
+znvpair                94208  2 zfs,zcommon
+spl                   114688  6 zfs,icp,zzstd,znvpair,zcommon,zavl
+snd_hda_codec_hdmi     61440  1
+snd_hda_codec_conexant    28672  1
+snd_hda_codec_generic    81920  1 snd_hda_codec_conexant
+ledtrig_audio          16384  1 snd_hda_codec_generic
+snd_hda_intel          53248  2
+snd_intel_dspcfg       28672  1 snd_hda_intel
+snd_intel_sdw_acpi     20480  1 snd_intel_dspcfg
+snd_hda_codec         147456  4 snd_hda_codec_generic,snd_hda_codec_conexant,snd_hda_codec_hdmi,snd_hda_intel
+intel_rapl_msr         20480  0
+intel_rapl_common      24576  1 intel_rapl_msr
+x86_pkg_temp_thermal    20480  0
+intel_powerclamp       20480  0
+coretemp               20480  0
+kvm_intel             290816  0
+snd_hda_core           94208  5 snd_hda_codec_generic,snd_hda_codec_conexant,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec
+snd_hwdep              16384  1 snd_hda_codec
+joydev                 28672  0
+input_leds             16384  0
+snd_pcm               118784  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+snd_seq_midi           20480  0
+snd_seq_midi_event     16384  1 snd_seq_midi
+snd_rawmidi            36864  1 snd_seq_midi
+snd_seq                73728  2 snd_seq_midi,snd_seq_midi_event
+mei_hdcp               24576  0
+kvm                   872448  1 kvm_intel
+snd_seq_device         16384  3 snd_seq,snd_seq_midi,snd_rawmidi
+snd_timer              40960  2 snd_seq,snd_pcm
+snd                    94208  15 snd_hda_codec_generic,snd_seq,snd_hda_codec_conexant,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_timer,snd_pcm,snd_rawmidi
+mei_me                 40960  1
+soundcore              16384  1 snd
+mei                   131072  3 mei_hdcp,mei_me
+at24                   24576  0
+mac_hid                16384  0
+rapl                   20480  0
+intel_cstate           20480  0
+efi_pstore             16384  0
+sch_fq_codel           20480  2
+msr                    16384  0
+ppdev                  24576  0
+parport                65536  3 parport_pc,lp,ppdev
+ip_tables              32768  0
+x_tables               49152  1 ip_tables
+autofs4                45056  2
+overlay               135168  1
+nls_utf8               16384  1
+isofs                  45056  1
+nls_iso8859_1          16384  0
+dm_mirror              24576  0
+dm_region_hash         24576  1 dm_mirror
+dm_log                 20480  2 dm_region_hash,dm_mirror
+hid_generic            16384  0
+usbhid                 61440  1 hid_logitech_dj
+uas                    28672  0
+usb_storage            73728  3 uas
+hid                   135168  4 usbhid,hid_generic,hid_logitech_dj,hid_logitech_hidpp
+i915                 2428928  11
+crct10dif_pclmul       16384  1
+crc32_pclmul           16384  0
+i2c_algo_bit           16384  1 i915
+ghash_clmulni_intel    16384  0
+drm_kms_helper        262144  1 i915
+aesni_intel           376832  0
+crypto_simd            16384  1 aesni_intel
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
+fb_sys_fops            16384  1 drm_kms_helper
+cec                    53248  2 drm_kms_helper,i915
+rc_core                57344  1 cec
+i2c_i801               36864  0
+r8169                  94208  0
+drm                   561152  5 drm_kms_helper,i915
+i2c_smbus              20480  1 i2c_i801
+realtek                32768  1
+ahci                   40960  0
+lpc_ich                24576  0
+libahci                36864  1 ahci
+xhci_pci               20480  0
+xhci_pci_renesas       20480  1 xhci_pci
+video                  53248  1 i915
