@@ -1,0 +1,125 @@
+Module                  Size  Used by
+lp                     20480  0
+parport_pc             45056  1
+st                     61440  0
+nvram                  16384  0
+nfnetlink              20480  0
+rfcomm                 81920  4
+cmac                   16384  3
+algif_hash             16384  1
+algif_skcipher         16384  1
+af_alg                 28672  6 algif_hash,algif_skcipher
+bnep                   28672  2
+zfs                  4255744  6
+zunicode              331776  1 zfs
+zzstd                 438272  1 zfs
+zlua                  151552  1 zfs
+zavl                   16384  1 zfs
+icp                   303104  1 zfs
+zcommon                98304  2 zfs,icp
+znvpair                94208  2 zfs,zcommon
+spl                   114688  6 zfs,icp,zzstd,znvpair,zcommon,zavl
+b43                   430080  0
+cordic                 16384  1 b43
+mac80211             1024000  1 b43
+snd_hda_codec_hdmi     61440  2
+intel_rapl_msr         20480  0
+intel_rapl_common      24576  1 intel_rapl_msr
+x86_pkg_temp_thermal    20480  0
+intel_powerclamp       20480  0
+snd_ctl_led            24576  0
+coretemp               20480  0
+snd_hda_codec_idt      61440  1
+snd_hda_codec_generic    81920  1 snd_hda_codec_idt
+kvm_intel             290816  0
+btusb                  61440  0
+btrtl                  24576  1 btusb
+btbcm                  16384  1 btusb
+btintel                32768  1 btusb
+ledtrig_audio          16384  2 snd_ctl_led,snd_hda_codec_generic
+bluetooth             663552  33 btrtl,btintel,btbcm,bnep,btusb,rfcomm
+snd_hda_intel          53248  3
+snd_intel_dspcfg       28672  1 snd_hda_intel
+snd_intel_sdw_acpi     20480  1 snd_intel_dspcfg
+snd_hda_codec         147456  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_idt
+snd_hda_core           94208  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_idt
+snd_hwdep              16384  1 snd_hda_codec
+snd_pcm               118784  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+snd_seq_midi           20480  0
+kvm                   872448  1 kvm_intel
+snd_seq_midi_event     16384  1 snd_seq_midi
+snd_rawmidi            36864  1 snd_seq_midi
+mei_hdcp               24576  0
+snd_seq                73728  2 snd_seq_midi,snd_seq_midi_event
+ecdh_generic           16384  2 bluetooth
+ecc                    36864  1 ecdh_generic
+cfg80211              892928  2 b43,mac80211
+snd_seq_device         16384  3 snd_seq,snd_seq_midi,snd_rawmidi
+snd_timer              40960  2 snd_seq,snd_pcm
+rapl                   20480  0
+hp_wmi                 20480  0
+intel_cstate           20480  0
+platform_profile       16384  1 hp_wmi
+input_leds             16384  0
+joydev                 28672  0
+sparse_keymap          16384  1 hp_wmi
+wmi_bmof               16384  0
+ssb                    73728  1 b43
+libarc4                16384  1 mac80211
+serio_raw              20480  0
+snd                    94208  18 snd_ctl_led,snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_timer,snd_pcm,snd_hda_codec_idt,snd_rawmidi
+mac_hid                16384  0
+mei_me                 40960  1
+soundcore              16384  2 snd_ctl_led,snd
+mei                   131072  3 mei_hdcp,mei_me
+tpm_infineon           20480  0
+hp_accel               28672  0
+lis3lv02d              24576  1 hp_accel
+hp_wireless            16384  0
+sch_fq_codel           20480  2
+msr                    16384  0
+ppdev                  24576  0
+parport                65536  3 parport_pc,lp,ppdev
+ip_tables              32768  0
+x_tables               49152  1 ip_tables
+autofs4                45056  2
+overlay               135168  1
+nls_utf8               16384  1
+isofs                  45056  1
+dm_mirror              24576  0
+dm_region_hash         24576  1 dm_mirror
+dm_log                 20480  2 dm_region_hash,dm_mirror
+uas                    28672  0
+usb_storage            73728  3 uas
+crct10dif_pclmul       16384  1
+crc32_pclmul           16384  0
+ghash_clmulni_intel    16384  0
+i915                 2428928  8
+aesni_intel           376832  4
+i2c_algo_bit           16384  1 i915
+crypto_simd            16384  1 aesni_intel
+sdhci_pci              65536  0
+cryptd                 24576  3 crypto_simd,ghash_clmulni_intel
+drm_kms_helper        262144  1 i915
+firewire_ohci          45056  0
+psmouse               159744  0
+syscopyarea            16384  1 drm_kms_helper
+bcma                   65536  1 b43
+sysfillrect            16384  1 drm_kms_helper
+firewire_core          69632  1 firewire_ohci
+sysimgblt              16384  1 drm_kms_helper
+cqhci                  32768  1 sdhci_pci
+fb_sys_fops            16384  1 drm_kms_helper
+ahci                   40960  0
+cec                    53248  2 drm_kms_helper,i915
+libahci                36864  1 ahci
+sdhci                  69632  1 sdhci_pci
+rc_core                57344  1 cec
+lpc_ich                24576  0
+crc_itu_t              16384  1 firewire_core
+drm                   561152  5 drm_kms_helper,i915
+e1000e                286720  0
+xhci_pci               20480  0
+xhci_pci_renesas       20480  1 xhci_pci
+wmi                    32768  2 hp_wmi,wmi_bmof
+video                  53248  1 i915
