@@ -16,6 +16,10 @@ if [ -f /etc/lsb-release ]; then
 	fi
 fi
 
+if [ -z "${DISPLAY}" ]; then
+	export DISPLAY=":0"
+fi
+
 SKU_NUMBER=$(sudo dmidecode -s system-sku-number)
 git clone https://github.com/osfordev/hardware.git /tmp/hardware
 mkdir "/tmp/hardware/${SKU_NUMBER}"
@@ -29,7 +33,7 @@ sudo lshw > "${SKU_NUMBER}.lshw.${RELEASE}"
 sudo lsmod > "${SKU_NUMBER}.lsmod.${RELEASE}"
 sudo lspci -knn > "${SKU_NUMBER}.lspci-knn.${RELEASE}"
 sudo lsusb -vt > "${SKU_NUMBER}.lsusb-vt.${RELEASE}"
-DISPLAY=:0 xinput > "${SKU_NUMBER}.xinput.${RELEASE}"
+xinput > "${SKU_NUMBER}.xinput.${RELEASE}"
 for CODEC in /proc/asound/card[0-9]/codec#[0-9]; do
 	HARDWARE_FILE=$(echo "${CODEC}" | sed 's~/~-~g')
 	cat "${CODEC}" > "${SKU_NUMBER}.cat${HARDWARE_FILE}.${RELEASE}"
