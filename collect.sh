@@ -19,8 +19,13 @@ fi
 if [ -z "${DISPLAY}" ]; then
 	export DISPLAY=":0"
 fi
+echo "Using DISPLAY=${DISPLAY}"
 
-SKU_NUMBER=$(sudo dmidecode -s system-sku-number)
+if [ -z "${SKU_NUMBER}" ]; then
+	SKU_NUMBER=$(sudo dmidecode -s system-sku-number)
+fi
+echo "Using SKU_NUMBER=${SKU_NUMBER}"
+
 git clone https://github.com/osfordev/hardware.git /tmp/hardware
 mkdir "/tmp/hardware/${SKU_NUMBER}"
 cd "/tmp/hardware/${SKU_NUMBER}"
