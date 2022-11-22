@@ -1,0 +1,12 @@
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/8p, 5000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/12p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 3: Dev 2, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M
+        ID 09da:0260 A4Tech Co., Ltd. KV-300H Isolation Keyboard
+    |__ Port 3: Dev 2, If 1, Class=Human Interface Device, Driver=usbhid, 1.5M
+        ID 09da:0260 A4Tech Co., Ltd. KV-300H Isolation Keyboard
+    |__ Port 10: Dev 3, If 0, Class=Human Interface Device, Driver=usbhid, 12M
+        ID 26ce:01a2  
+    |__ Port 12: Dev 4, If 0, Class=Hub, Driver=hub/4p, 480M
+        ID 05e3:0610 Genesys Logic, Inc. Hub
